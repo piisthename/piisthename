@@ -1,0 +1,18 @@
+from math import *
+a=float(input('incert a :'))
+b=float(input('incert b :'))
+c=float(input('incert c :'))
+delta=(b**2 - 4*a*c)
+if delta>0:
+    x1=(-b)+sqrt(delta)/(2*a)
+    root1=(a*(x1**2)+(b * x1)+c)
+    x2=(-b)-sqrt(delta)/(2*a)
+    root2=(a*(x2**2)+(b * x2)+c)
+    print('frist root is =>',x1,'1st answer is =>',root1)
+    print('secend root is =>',x2 ,'2st answer is =>',root2)
+elif delta == 0 :
+    x3=(-b)/(2*a)
+    single_root=(a*(x3**2)+(b * x3)+c)
+    print('the single root is =>',x3,'single answer is =>',single_root)
+elif delta < 0 :
+    print('The equation has no real root')
